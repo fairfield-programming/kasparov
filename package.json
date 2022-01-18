@@ -14,9 +14,10 @@
   },
   "files": [
     "readme.md",
-    "src/index.js"
+    "src/*.js",
+    "src/**/*.js"
   ],
   "keywords": [],
-  "author": "",
+  "author": "William McGonagle",
   "license": "ISC"
 }
