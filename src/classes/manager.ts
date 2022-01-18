@@ -32,6 +32,12 @@ export default class Manager {
 
     }
 
+    calculateScores() {
+
+        
+
+    }
+
     printQuestions(format?:string) {
 
         const formatting = format || "%NAME% - %POINTS%";

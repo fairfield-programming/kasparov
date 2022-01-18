@@ -26,3 +26,7 @@ function getShortestSubmission(submissions:Array<Submission>) {
     }
 
 }
+
+export default {
+    getShortestSubmission
+};
