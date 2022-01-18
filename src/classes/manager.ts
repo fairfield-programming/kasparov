@@ -20,6 +20,18 @@ export default class Manager {
 
     }
 
+    getQuestionSubmissions(index:number) {
+
+        return this.submissions.filter((element) => (element.question == index));
+
+    }
+
+    getTeamSubmissions(index:number) {
+
+        return this.submissions.filter((element) => (element.team == index));
+
+    }
+
     printQuestions(format?:string) {
 
         const formatting = format || "%NAME% - %POINTS%";
