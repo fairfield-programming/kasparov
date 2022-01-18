@@ -7,7 +7,8 @@
   "type": "module",
   "scripts": {
     "test": "npm start; node src/index.js",
-    "start": "tsc",
+    "start": "npm run clean; tsc",
+    "clean": "find . -name '*.js' -type f -delete",
     "sync": "npm start; git add -A; git commit -m '✨ Pushed Up Code';",
     "patch": "npm run sync; npm version patch; npm publish;",
     "minor": "npm run sync; npm version minor; npm publish;",
