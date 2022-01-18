@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc",
-    "patch": "npm start; npm version patch; npm publish;",
-    "minor": "npm start; npm version minor; npm publish;",
-    "major": "npm start; npm version major; npm publish;"
+    "sync": "npm start; git add -A; git commit -m '✨ Pushed Up Code';",
+    "patch": "npm run sync; npm version patch; npm publish;",
+    "minor": "npm run sync; npm version minor; npm publish;",
+    "major": "npm run sync; npm version major; npm publish;"
   },
   "files": [
     "readme.md",
