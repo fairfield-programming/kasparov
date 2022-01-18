@@ -1,3 +1,3 @@
-import Test from "./classes/test.js";
+import Question from "./classes/question.js";
 
-const test = new Test("FizzBuzz", 45);
+const test = new Question("FizzBuzz", 45);

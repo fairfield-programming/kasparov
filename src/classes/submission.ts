@@ -1,12 +1,12 @@
 export default class Submission {
 
-    index:number;
+    question:number;
     text:string;
     language:string;
 
-    constructor(_index:number, _text:string) {
+    constructor(_question:number, _text:string) {
         
-        this.index = _index;
+        this.question = _question;
         this.text = _text;
 
     }
