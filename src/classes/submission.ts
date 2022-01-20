@@ -4,6 +4,7 @@ export default class Submission {
     team:number;
     text:string;
     language:string;
+    correct:(-1|0|1);
 
     constructor(_question:number, _text:string) {
         

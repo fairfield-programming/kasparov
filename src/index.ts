@@ -1,18 +1,19 @@
-import Manager from "./classes/manager.js";
 import Question from "./classes/question.js";
 import Team from "./classes/team.js";
 import Submission from "./classes/submission.js";
 
-// const manager = new Manager([
-//     new Question("HelloWorld", 25),
-//     new Question("FizzBuzz", 45),
-//     new Question("SquareRoot", 100)
-// ]);
+var question = new Question("FizzBuzz", 45)
 
-// console.log(manager.printQuestions("%NAME%: %POINTS%pts"));
+question.code = "process.stdin.pipe(process.stdout);";
+question.language = "js";
+
+question.createTestCases([
+    "45",
+    "40",
+    "10"
+])
 
 export default {
-    Manager,
     Question,
     Team,
     Submission
